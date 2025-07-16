@@ -13,7 +13,7 @@ def test_mobile_size_browser_skip(screen_size_browser_fixture_parametrize):
     browser.open("https://github.com/")
     browser.element('(//*[contains(text(),"Sign in")])[2]').click()
     browser.element(
-        '[class="auth-form-header p-0"]').should(
+        '[class="SessionsAuthHeader-module__authFormHeaderTitle--Kg7Qt"]').should(
         have.exact_text(
             "Sign in to GitHub"))
 
@@ -24,6 +24,6 @@ def test_desktop_size_browser_skip(screen_size_browser_fixture_parametrize):
     browser.open("https://github.com/")
     browser.element('//*[contains(text(),"Sign in")]').click()
     browser.element(
-        '[class="auth-form-header p-0"]').should(
+        '[class="SessionsAuthHeader-module__authFormHeaderTitle--Kg7Qt"]').should(
         have.exact_text(
             "Sign in to GitHub"))
